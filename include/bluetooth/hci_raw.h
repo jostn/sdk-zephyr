@@ -24,7 +24,7 @@ extern "C" {
 #if defined(CONFIG_BT_CTLR_TX_BUFFER_SIZE)
 #define BT_L2CAP_MTU (CONFIG_BT_CTLR_TX_BUFFER_SIZE - BT_L2CAP_HDR_SIZE)
 #else
-#define BT_L2CAP_MTU 65 /* 64-byte public key + opcode */
+#define BT_L2CAP_MTU 251 /* 64-byte public key + opcode */
 #endif /* CONFIG_BT_CTLR */
 
 /** Data size needed for ACL buffers */
