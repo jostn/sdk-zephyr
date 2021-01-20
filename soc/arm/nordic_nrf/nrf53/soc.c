@@ -67,7 +67,7 @@ static int nordicsemi_nrf53_init(const struct device *arg)
 	!defined(CONFIG_TRUSTED_EXECUTION_NONSECURE) && \
 	defined(CONFIG_SOC_ENABLE_LFXO)
 	nrf_oscillators_lfxo_cap_set(NRF_OSCILLATORS,
-				     NRF_OSCILLATORS_LFXO_CAP_11PF);
+				     NRF_OSCILLATORS_LFXO_CAP_7PF);
 	nrf_gpio_pin_mcu_select(PIN_XL1, NRF_GPIO_PIN_MCUSEL_PERIPHERAL);
 	nrf_gpio_pin_mcu_select(PIN_XL2, NRF_GPIO_PIN_MCUSEL_PERIPHERAL);
 #endif
